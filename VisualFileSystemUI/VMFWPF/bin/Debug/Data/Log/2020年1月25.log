@@ -1,0 +1,111 @@
+2020年1月25日19:24:52 Code:0。 Warring: 
+-----------------开始---------------
+ 
+2020年1月25日19:24:52 Code:0。 Warring:  MapProcesser初始化完成 
+2020年1月25日19:24:52 Code:0。 Warring:  DriverProcesser初始化完成 
+2020年1月25日19:24:52 Code:0。 Warring:  FileProcesser初始化完成 
+2020年1月25日19:24:52 Code:183。 Warring: 打开文件成功，但文件目标已存在 D:\新建虚拟磁盘.vmf
+2020年1月25日19:24:52 Code:0。 Warring: 打开虚拟文件对象  D:\新建虚拟磁盘.vmf
+2020年1月25日19:24:52 Code:0。 Warring: 打开文件成功 D:\新建虚拟磁盘.vmf
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 0 L: 280 
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4924702 L: 96 
+2020年1月25日19:24:52 Code:0。 Warring:  载入头节点: 1579950322 F: 0 T: 280 
+2020年1月25日19:24:52 Code:0。 Warring: ---开始Index载入--- 
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4924798 L: 192 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  1579950322 L 4924798 C 192 S 1
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4924126 L: 576 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  头 L 4924126 C 576 S 3
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4909342 L: 384 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  BatchNode_1579950322 L 4909342 C 384 S 2
+2020年1月25日19:24:52 Code:0。 Warring: BATCHBLOCK_1579950322节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: BATCHBLOCK_1579950323节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: opencl-1.2.pdf节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4922014 L: 2112 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  www L 4922014 C 2112 S 11
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4913566 L: 576 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  assets L 4913566 C 576 S 3
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4909726 L: 1728 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  css L 4909726 C 1728 S 9
+2020年1月25日19:24:52 Code:0。 Warring: ace-fonts.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: ace-ie.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: ace-part2.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: ace-rtl.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: ace-skins.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: ace.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: ace.onpage-help.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: bootstrap.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: pace.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4911454 L: 1536 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  fonts L 4911454 C 1536 S 8
+2020年1月25日19:24:52 Code:0。 Warring: glyphicons-halflings-regular.eot节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: glyphicons-halflings-regular.svg节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: glyphicons-halflings-regular.ttf节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: glyphicons-halflings-regular.woff节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: glyphicons-halflings-regular.woff2节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: OpenSans-300.woff节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: OpenSans-400.woff节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: readme节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4913374 L: 192 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  js L 4913374 C 192 S 1
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4912990 L: 384 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  src L 4912990 C 384 S 2
+2020年1月25日19:24:52 Code:0。 Warring: ace.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: elements.fileinput.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: browser-content.html节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4918558 L: 2880 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  com L 4918558 C 2880 S 15
+2020年1月25日19:24:52 Code:0。 Warring: bg_03.png节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: bootstrap.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: bootstrap3-typeahead.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: browser-empty.png节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: download_empty.png节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4917982 L: 576 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  font-awesome L 4917982 C 576 S 3
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4914142 L: 384 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  css L 4914142 C 384 S 2
+2020年1月25日19:24:52 Code:0。 Warring: font-awesome.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: font-awesome.min.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4914526 L: 960 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  fonts L 4914526 C 960 S 5
+2020年1月25日19:24:52 Code:0。 Warring: fontawesome-webfont.eot节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: fontawesome-webfont.svg节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: fontawesome-webfont.ttf节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: fontawesome-webfont.woff节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: fontawesome-webfont.woff2节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4915486 L: 2496 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  less L 4915486 C 2496 S 13
+2020年1月25日19:24:52 Code:0。 Warring: animated.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: bordered-pulled.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: core.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: fixed-width.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: font-awesome.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: icons.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: larger.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: list.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: mixins.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: path.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: rotated-flipped.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: stacked.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: variables.less节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: jquery-ui.min.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: jquery.contextMenu.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: jquery.gritter.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: jquery.gritter.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: jquery.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: jquery.jscroll.js节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: logo.png节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: other.css节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: upload_empty.png节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: download-content.html节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring:  映射段: 4921438 L: 576 
+2020年1月25日19:24:52 Code:0。 Warring:  载入Index  img L 4921438 C 576 S 3
+2020年1月25日19:24:52 Code:0。 Warring: icon.png节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: loading.gif节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: sprite_list_icon.gif节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: index.html节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: loading.html节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: login.html节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: private-content.html节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: public-content.html节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: upload-content.html节点属于数据段 不载入子节点
+2020年1月25日19:24:52 Code:0。 Warring: ---Index载入完毕--- 

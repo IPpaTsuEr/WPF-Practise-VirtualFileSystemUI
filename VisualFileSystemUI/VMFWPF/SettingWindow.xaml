@@ -1,0 +1,193 @@
+﻿<Window x:Class="VMFWPF.SettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VMFWPF"
+        mc:Ignorable="d"
+        Title="SettingWindow" 
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        Height="400" Width="400" 
+        Background="#FF232323"
+        >
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Width" Value="64"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}"
+                            HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                            Margin="{TemplateBinding Padding}"
+                            >
+                            <ContentPresenter
+                                Margin="{TemplateBinding Margin}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="Aqua"></Setter>
+                    <Setter Property="Background" Value="Gray"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style TargetType="CheckBox">
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Width" Value="64"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="#ff393939" />
+            <Setter Property="Width" Value="64"/>
+            
+        </Style>
+
+        <Style TargetType="Thumb">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Thumb">
+                        <Border CornerRadius="25"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
+    <Grid Margin="25,10">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Style="{x:Null}" Height="32"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Stretch"
+                     Text="{Binding OutPath}" IsEnabled="False"></TextBox>
+
+            <Button Grid.Column="2" Click="Button_Click" IsEnabled="{Binding NormalModel}">浏览...</Button>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock >文件名</TextBlock>
+            <TextBox Grid.Column="1" Margin="10,0,0,0"
+                     Style="{x:Null}" Height="32"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Stretch"
+                     Text="{Binding FileName}"
+                     IsEnabled="{Binding NormalModel}"
+                     TextChanged="TextBox_TextChanged"  
+                     ></TextBox>
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+                <!--<ColumnDefinition Width="auto"/>-->
+            </Grid.ColumnDefinitions>
+            <Slider Name="Size_Slider" VerticalAlignment="Center" IsMoveToPointEnabled="True"
+                    Maximum="{Binding UseableSize}" IsEnabled="{Binding NormalModel}"
+                    Value="{Binding FileSize,Mode=TwoWay,Converter={StaticResource StringValueConvert},ConverterParameter=FromSlider}"></Slider>
+            <TextBox Grid.Column="1" IsEnabled="{Binding NormalModel}"
+                     Text="{Binding FileSize,Mode=TwoWay,Converter={StaticResource StringValueConvert}}"></TextBox>
+            <!--<ComboBox Grid.Column="2"></ComboBox>-->
+        </Grid>
+
+        <CheckBox Grid.Row="3" Content="启用数据块压缩" IsChecked="{Binding EnableZip,Mode=TwoWay}"></CheckBox>
+
+        <Grid Grid.Row="4"  Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <!--<ColumnDefinition Width="Auto"/>-->
+            </Grid.ColumnDefinitions>
+            <TextBlock>合并大小</TextBlock>
+            <TextBox Grid.Column="2" Text="{Binding BlockSize,Mode=TwoWay,Converter={StaticResource StringValueConvert}}"></TextBox>
+            <!--<ComboBox Grid.Column="3"></ComboBox>-->
+        </Grid>
+
+        <Grid Grid.Row="5"  Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <!--<ColumnDefinition Width="Auto"/>-->
+            </Grid.ColumnDefinitions>
+            <TextBlock >单次读写大小</TextBlock>
+            <TextBox Grid.Column="2" Text="{Binding SectionSize,Mode=TwoWay,Converter={StaticResource StringValueConvert}}"></TextBox>
+            <!--<ComboBox Grid.Column="3"></ComboBox>-->
+        </Grid>
+
+        <Grid Grid.Row="6"  Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <!--<ColumnDefinition Width="Auto"/>-->
+            </Grid.ColumnDefinitions>
+            <TextBlock >大型文件大小</TextBlock>
+            <TextBox Grid.Column="2" Text="{Binding HugeSize,Mode=TwoWay,Converter={StaticResource StringValueConvert}}"></TextBox>
+            <!--<ComboBox Grid.Column="3"></ComboBox>-->
+        </Grid>
+
+        <StackPanel Grid.Row="7" Margin="4"
+                    Height="40" VerticalAlignment="Bottom"
+                    Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="Sure_Button" Margin="4" Click="Sure_Button_Click">确定</Button>
+            <Button Name="Cancle_Button" Margin="4" Click="Cancle_Button_Click">取消</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B2C6D31-0D09-4472-9C24-1C0105F3DB8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VMFWPF</RootNamespace>
+    <AssemblyName>VMFWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrameLessWindow">
+      <HintPath>..\..\ToolsLibrary\ToolsLibrary\bin\Debug\FrameLessWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameSlecteListView">
+      <HintPath>..\..\ToolsLibrary\FrameSlecteListView\bin\Debug\FrameSlecteListView.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Core.1.1.1\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Shell.1.1.1\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SearchBox">
+      <HintPath>..\..\ToolsLibrary\SearchBox\bin\Debug\SearchBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="VMControls">
+      <HintPath>..\..\ToolsLibrary\VMControls\bin\Debug\VMControls.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Converts\BoolToVisibility.cs" />
+    <Compile Include="Converts\CollectionReverse.cs" />
+    <Compile Include="Converts\CountToVisibility.cs" />
+    <Compile Include="Converts\DialogConvert.cs" />
+    <Compile Include="Converts\DisplayFloderOnly.cs" />
+    <Compile Include="Converts\DoNothingMultiConvert.cs" />
+    <Compile Include="Converts\DriveIndexConvert.cs" />
+    <Compile Include="Converts\EqualToBool.cs" />
+    <Compile Include="Converts\FileTypeTextConvert.cs" />
+    <Compile Include="Converts\FileTypeToColor.cs" />
+    <Compile Include="Converts\HistoryListWidthConverter.cs" />
+    <Compile Include="Converts\IconLevelToWidth.cs" />
+    <Compile Include="Converts\ModifyConvert.cs" />
+    <Compile Include="Converts\NodeToPathView.cs" />
+    <Compile Include="Converts\PathViewChildrenListVisiable.cs" />
+    <Compile Include="Converts\PathViewDisplayFloderOnly.cs" />
+    <Compile Include="Converts\ScrollViewerToVisiable.cs" />
+    <Compile Include="Converts\StringTypeToIconConvert.cs" />
+    <Compile Include="Converts\StringValueConvert.cs" />
+    <Compile Include="Converts\TreeViewMargin.cs" />
+    <Compile Include="DialogWindow.xaml.cs">
+      <DependentUpon>DialogWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PathHistory.cs" />
+    <Compile Include="Selecters\MainListItemSelecter.cs" />
+    <Compile Include="Services\ColorHelper.cs" />
+    <Compile Include="Services\DiskHelper.cs" />
+    <Compile Include="Services\IconHelper.cs" />
+    <Compile Include="Services\IOHelper.cs" />
+    <Compile Include="Services\VisualHelper.cs" />
+    <Compile Include="Services\VMHelper.cs" />
+    <Compile Include="SettingWindow.xaml.cs">
+      <DependentUpon>SettingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VMWindow.xaml.cs">
+      <DependentUpon>VMWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="DialogWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="SettingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ControlsDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\StaticDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VMWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\VM.cs" />
+    <Compile Include="Model\VMNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Assets\Font\iconfont-sys.ttf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\Defalut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\UnKnown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\Small\Floder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\Small\Defalut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\Floder\128x128Empty.png" />
+    <Resource Include="Assets\Icon\Floder\128x128Many.png" />
+    <Resource Include="Assets\Icon\Floder\128x128New.png" />
+    <Resource Include="Assets\Icon\Floder\128x128Some.png" />
+    <Resource Include="Assets\Icon\Floder\24x24Empty.png" />
+    <Resource Include="Assets\Icon\Floder\24x24Many.png" />
+    <Resource Include="Assets\Icon\Floder\24x24New.png" />
+    <Resource Include="Assets\Icon\Floder\24x24Some.png" />
+    <Resource Include="Assets\Icon\Floder\256x256Empty.png" />
+    <Resource Include="Assets\Icon\Floder\256x256Many.png" />
+    <Resource Include="Assets\Icon\Floder\256x256New.png" />
+    <Resource Include="Assets\Icon\Floder\256x256Some.png" />
+    <Resource Include="Assets\Icon\Floder\32x32Empty.png" />
+    <Resource Include="Assets\Icon\Floder\32x32Many.png" />
+    <Resource Include="Assets\Icon\Floder\32x32New.png" />
+    <Resource Include="Assets\Icon\Floder\32x32Some.png" />
+    <Resource Include="Assets\Icon\Floder\64x64Empty.png" />
+    <Resource Include="Assets\Icon\Floder\64x64Many.png" />
+    <Resource Include="Assets\Icon\Floder\64x64New.png" />
+    <Resource Include="Assets\Icon\Floder\64x64Some.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\Disk\128x128Disk.png" />
+    <Resource Include="Assets\Icon\Disk\24x24Disk.png" />
+    <Resource Include="Assets\Icon\Disk\32x32Disk.png" />
+    <Resource Include="Assets\Icon\Disk\64x64Disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\VMDisk\128x128VMDisk.png" />
+    <Resource Include="Assets\Icon\VMDisk\24x24VMDisk.png" />
+    <Resource Include="Assets\Icon\VMDisk\32x32VMDisk.png" />
+    <Resource Include="Assets\Icon\VMDisk\64x64VMDisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\FastAccess\128x128FastAccess.png" />
+    <Resource Include="Assets\Icon\FastAccess\24x24FastAccess.png" />
+    <Resource Include="Assets\Icon\FastAccess\32x32FastAccess.png" />
+    <Resource Include="Assets\Icon\FastAccess\64x64FastAccess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\Disk\128x128Active.png" />
+    <Resource Include="Assets\Icon\Disk\24x24Active.png" />
+    <Resource Include="Assets\Icon\Disk\32x32Active.png" />
+    <Resource Include="Assets\Icon\Disk\64x64Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon\VMSearch\128x128VMSearch.png" />
+    <Resource Include="Assets\Icon\VMSearch\24x24VMSearch.png" />
+    <Resource Include="Assets\Icon\VMSearch\32x32VMSearch.png" />
+    <Resource Include="Assets\Icon\VMSearch\64x64VMSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Core\FOFx64.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,50 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:cs="clr-namespace:VMFWPF.Converts"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:VMFWPF.Styles">
+    
+    <cs:StringTypeToIconConvert x:Key="StringTypeToIconConvert"></cs:StringTypeToIconConvert>
+    <cs:DoNothingMultiConvert x:Key="DoNothingMultiConvert"></cs:DoNothingMultiConvert>
+    <cs:ScrollViewerToVisiable x:Key="ScrollViewerToVisiable"></cs:ScrollViewerToVisiable>
+    <cs:CollectionReverse x:Key="CollectionReverse"></cs:CollectionReverse>
+    <cs:NodeToPathView x:Key="NodeToPathView"></cs:NodeToPathView>
+    <cs:DisplayFloderOnly x:Key="DisplayFloderOnly"></cs:DisplayFloderOnly>
+    <cs:PathViewDisplayFloderOnly x:Key="PathViewDisplayFloderOnly"></cs:PathViewDisplayFloderOnly>
+    <cs:PathViewChildrenListVisiable x:Key="PathViewChildrenListVisiable"></cs:PathViewChildrenListVisiable>
+    <cs:TreeViewMargin x:Key="TreeViewMargin"></cs:TreeViewMargin>
+    <cs:FileTypeToColor x:Key="FileTypeToColor"></cs:FileTypeToColor>
+    <cs:FileTypeTextConvert x:Key="FileTypeTextConvert"></cs:FileTypeTextConvert>
+    <cs:IconLevelToWidth x:Key="IconLevelToWidth"></cs:IconLevelToWidth>
+    <cs:BoolToVisibility x:Key="BoolToVisibility"></cs:BoolToVisibility>
+    <cs:ModifyConvert x:Key="ModifyConvert"/>
+    <cs:SModifyConvert x:Key="SModifyConvert"/>
+    <cs:HistoryListWidthConverter x:Key="HistoryListWidthConverter"/>
+    <cs:DialogConvert x:Key="DialogConvert"/>
+    <cs:StringValueConvert x:Key="StringValueConvert"/>
+    <cs:EqualToBool x:Key="EqualToBool"/>
+    <cs:DriveIndexConvert x:Key="DriveIndexConvert"/>
+
+    <BitmapImage x:Key="DefaluteSmallIcon" UriSource="/VMFWPF;component/Assets/Icon/Small/Defalut.png"></BitmapImage>
+    <BitmapImage x:Key="DefaluteIcon"  UriSource="/VMFWPF;component/Assets/Icon/Defalut.png"></BitmapImage>
+
+    <SolidColorBrush x:Key="IconForeground" Color="White"></SolidColorBrush>
+    <SolidColorBrush x:Key="SelectedBrush" Color="#1FF0EFFF"></SolidColorBrush>
+    <SolidColorBrush x:Key="OverBrush" Color="#6F696969"></SolidColorBrush>
+    <SolidColorBrush x:Key="IconBackground" Color="#FF2D2D30"/>
+
+    <FontFamily x:Key="iconfont">/VMFWPF;component/Assets/Font/#iconfont</FontFamily>
+
+    <sys:String x:Key="GoBack">&#xe60a;</sys:String>
+    <sys:String x:Key="PullUp">&#xe600;</sys:String>
+    <sys:String x:Key="GoUp">&#xe643;</sys:String>
+    <sys:String x:Key="Search">&#xe654;</sys:String>
+    <sys:String x:Key="Refreash">&#xe744;</sys:String>
+    <sys:String x:Key="FlatIconMain">&#xe611;</sys:String>
+    <sys:String x:Key="FlatIconTitle">&#xe612;</sys:String>
+    <sys:String x:Key="FlatIconShadow">&#xe613;</sys:String>
+    <sys:String x:Key="ActiveDiskBar">&#xe614;</sys:String>
+    <sys:String x:Key="Expanded">&#xe601;</sys:String>
+    <sys:String x:Key="UnExpanded">&#xe615;</sys:String>
+
+</ResourceDictionary>
